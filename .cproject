@@ -19,6 +19,8 @@
 					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.debug.1931223292." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.debug.145138998" name="ARM Linux GCC (Summon)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.debug">
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level.284009940" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.debugging.level.max" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi.875132176" name="Float ABI" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit.1501070818" name="FPU Type" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<targetPlatform id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.platform.debug.592539085" isAbstract="false" name="Linux Platform" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.platform.debug"/>
 							<builder buildPath="${workspace_loc:/STM32_PeriphLib/Debug}" id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.builder.debug.1435159628" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="ARM Summon Linux GNU Make builder" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.builder.debug"/>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.assembler.debug.1661880723" name="ARM Summon Linux GCC Assembler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.assembler.debug">
@@ -37,8 +39,9 @@
 									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
 									<listOptionValue builtIn="false" value="USE_STM32_DISCOVERY"/>
-									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE Value=8000000"/>
 								</option>
+								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std.2086780249" name="Language Standard" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std" value="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std.gnu99" valueType="enumerated"/>
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input.1008003470" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input"/>
 							</tool>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.debug.1552500407" name="ARM Summon Linux GCC C++ Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.debug">
@@ -97,6 +100,8 @@
 					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.release.142357116." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.release.1424254754" name="ARM Linux GCC (Summon)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.release">
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level.1040067182" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.debugging.level.none" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi.557524843" name="Float ABI" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit.1564730217" name="FPU Type" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<targetPlatform id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.platform.release.1056027230" isAbstract="false" name="Linux Platform" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.platform.release"/>
 							<builder buildPath="${workspace_loc:/STM32_PeriphLib/Release}" id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.builder.release.482191427" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="ARM Summon Linux GNU Make builder" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.builder.release"/>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.assembler.release.1069205863" name="ARM Summon Linux GCC Assembler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.assembler.release">
@@ -106,6 +111,13 @@
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level.195144931" name="Optimization level" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.optimization.level.size" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths.1891154037" name="Include paths (-I)" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSIS/inc}&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.preprocessor.def.1712426789" name="Defined symbols (-D)" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="USE_STM32_DISCOVERY"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
 								</option>
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input.800242529" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input"/>
 							</tool>
