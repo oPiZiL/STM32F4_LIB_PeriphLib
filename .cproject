@@ -19,7 +19,7 @@
 					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.debug.1931223292." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.debug.145138998" name="ARM Linux GCC (Summon)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.toolchain.debug">
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level.284009940" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.debugging.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.debugging.level.max" valueType="enumerated"/>
-							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi.875132176" name="Float ABI" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi.875132176" name="Float ABI" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.abi" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.abi.softfp" valueType="enumerated"/>
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit.1501070818" name="FPU Type" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.fpu.unit" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.processor.1996352606" name="Processor" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.processor" value="org.eclipse.cdt.cross.arm.gnu.base.option.mcpu.cortex-m4" valueType="enumerated"/>
 							<option id="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.endiannes.1642074730" name="Endiannes" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.option.target.endiannes" value="org.eclipse.cdt.cross.arm.gnu.base.option.target.endiannes.default" valueType="enumerated"/>
@@ -32,7 +32,7 @@
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.linux.assembler.base.input.1412025215" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.assembler.base.input"/>
 							</tool>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.c.compiler.debug.1154597949" name="ARM Summon Linux GCC C Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.c.compiler.debug">
-								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level.1677445039" name="Optimization level" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.optimization.level.none" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level.1677445039" name="Optimization level" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.optimization.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.optimization.level.most" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths.851738731" name="Include paths (-I)" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSIS/inc}&quot;"/>
@@ -44,7 +44,7 @@
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
 								</option>
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std.2086780249" name="Language Standard" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std" value="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.std.gnu99" valueType="enumerated"/>
-								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags.628517510" name="Other flags" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags" value="-c -fmessage-length=0  -mfloat-abi=hard -mfpu=fpv4-sp-d16" valueType="string"/>
+								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags.628517510" name="Other flags" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags" value="-c -fmessage-length=0  -mfloat-abi=softfp -mfpu=fpv4-sp-d16" valueType="string"/>
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input.1008003470" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input"/>
 							</tool>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.debug.1552500407" name="ARM Summon Linux GCC C++ Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.debug">
@@ -127,7 +127,7 @@
 									<listOptionValue builtIn="false" value="USE_STM32_DISCOVERY"/>
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
 								</option>
-								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags.1717589650" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags" value="-c -fmessage-length=0 -mfloat-abi=hard -mfpu=fpv4-sp-d16" valueType="string"/>
+								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags.1717589650" name="Other flags" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.other.otherflags" value="-c -fmessage-length=0  -mfloat-abi=hard -mfpu=fpv4-sp-d16" valueType="string"/>
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input.800242529" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.c.compiler.base.input"/>
 							</tool>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.release.1993244182" name="ARM Summon Linux GCC C++ Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.linux.lib.cpp.compiler.release">
